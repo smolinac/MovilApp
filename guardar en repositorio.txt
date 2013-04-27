@@ -1,4 +1,10 @@
-git add .
+
+ abrir git bash
+
+cambiar a la carpeta del repositorio cd repositorio
+
+
+ git add . (git add espacio punto)
 
 git commit -m "comentario"
 
