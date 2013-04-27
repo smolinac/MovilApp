@@ -1,7 +1,7 @@
 
  abrir git bash
 
-cambiar a la carpeta del repositorio cd repositorio
+cambiar a la carpeta del repositorio: cd repositorio
 
 
  git add . (git add espacio punto)
