@@ -1,0 +1,36 @@
+package com.basededatos;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.view.Menu;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	private Button  btnagrega;
+	private Button  btnmodifica;
+	private Button  btnelimina;
+	private Button  btnconsulta;
+	
+	
+	private UsuariosSQLiteHelper dbconnection;
+	
+    @Override
+        protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        dbconnection= new UsuariosSQLiteHelper(this, "dbejemplo", null, 3);
+        
+       }
+    
+    
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+    
+}
